@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>UI DARK</title>
+	<style>
+		
+		body
+		{
+          background-color: #1b1f23;
+          margin: 0;
+          padding: 0;
+          text-align: center;
+   		}
+        .textbox
+        {
+        	border-radius: 27px;
+            background: #1b1f23;
+            box-shadow: inset 9px 9px 18px #15181c, 
+            inset -9px -9px 18px #21262a;
+            height: 5vw;
+            width: 30vw;
+            border: none;
+            outline: none;
+            font-size: 2vw;
+            color: #ffffff;
+        }
+        .button1
+        {
+           border-radius: 59px;
+background: #1b1f23;
+box-shadow:  9px 9px 18px #15181c, 
+             -9px -9px 18px #21262a;
+            height: 5vw;
+            width: 5vw;
+            border: none;
+            outline: none;
+            font-size: 2vw;
+            margin: 15px;
+            color: #ffffff;
+        }
+         .button2
+        {
+            border-radius: 50px;
+            background: #ff8000;
+            height: 12vw;
+            width: 5vw;
+            border: none;
+            outline: none;
+            font-size: 2vw;
+            margin: 15px;
+            position: absolute;
+            left: 58%;
+        }
+        .button3
+        {
+          border-radius: 59px;
+background: #1b1f23;
+box-shadow:  9px 9px 18px #15181c, 
+             -9px -9px 18px #21262a;
+            height: 5vw;
+            width: 5vw;
+            border: none;
+            outline: none;
+            font-size: 2vw;
+            margin:15px;
+            transform: translateX(-50px);
+             color: #ffffff;
+        }
+	</style>
+</head>
+<body>
+<div class="main">
+	<br>
+<form name="example">
+	<input type="text" name="cal" placeholder="0" class="textbox">
+
+	 <br> <br>
+   <input type="button" name="button" value="C" onclick="example.cal.value =''" class="button1" style="color:#ff8000; ">
+	<input type="button" name="button" value="/" onclick="example.cal.value +='/'" class="button1"  style="color:#ff8000; ">
+	<input type="button" name="button" value="*" onclick="example.cal.value +='*'" class="button1"  style="color:#ff8000; ">
+	<input type="button" name="button" value="," onclick="example.cal.value +=','" class="button1"  style="color:#ff8000; ">
+
+	 <br>
+
+	<input type="button" name="button" value="7" onclick="example.cal.value +='7'" class="button1">
+	<input type="button" name="button" value="8" onclick="example.cal.value +='8'" class="button1">
+	<input type="button" name="button" value="9" onclick="example.cal.value +='9'" class="button1">
+	<input type="button" name="button" value="-" onclick="example.cal.value +='-'" class="button1"  style="color:#ff8000; ">
+
+     <br>
+
+	<input type="button" name="button" value="4" onclick="example.cal.value +='4'" class="button1">
+	<input type="button" name="button" value="5" onclick="example.cal.value +='5'" class="button1">
+	<input type="button" name="button" value="6" onclick="example.cal.value +='6'" class="button1">
+	<input type="button" name="button" value="+" onclick="example.cal.value +='+'" class="button1"  style="color:#ff8000; ">
+
+	 <br>
+
+	<input type="button" name="button" value="1" onclick="example.cal.value +='1'" class="button3">
+	<input type="button" name="button" value="2" onclick="example.cal.value +='2'" class="button3">
+	<input type="button" name="button" value="3" onclick="example.cal.value +='3'" class="button3">
+	<input type="button" name="button" value="=" onclick="example.cal.value = eval(example.cal.value)" class="button2">
+
+     <br>
+
+	<input type="button" name="button" value="%" onclick="example.cal.value +='%'"class="button3"  style="color:#ff8000; ">
+	<input type="button" name="button" value="0" onclick="example.cal.value +='0'"class="button3">
+	<input type="button" name="button" value="." onclick="example.cal.value +='.'"class="button3"  style="color:#ff8000; ">
+</form>
+
+</body>
+</html>
